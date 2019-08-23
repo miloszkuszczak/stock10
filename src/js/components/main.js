@@ -10,7 +10,7 @@ import { About } from './about.js';
 import { Ceo } from './ceo.js';
 import { Summary } from './summary.js';
 import { ProfitGraph } from "./profitgraph.js";
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+
 
 const currYear = new Date().getFullYear();
 

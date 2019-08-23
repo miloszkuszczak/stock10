@@ -13,7 +13,6 @@ import { Main } from './components/main.js';
 
 
 
-
 class LandingPage extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +47,7 @@ class LandingPage extends Component {
 
   componentDidMount() {
     const rand = randomCite();
-    fetch(`https://api.myjson.com/bins/ak3a5`)
+    fetch(`https://api.myjson.com/bins/1eqaph`)  //https://api.myjson.com/bins/ak3a5
       .then(res => res.json())
       .then(data => {
         let stockNames = data.stocks.map(x => x.name);
@@ -141,5 +140,4 @@ class App extends Component {
 }
 
 
-
-ReactDOM.render(<App />, document.getElementById("app"))
+export default App;

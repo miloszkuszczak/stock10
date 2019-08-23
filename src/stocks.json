@@ -103,9 +103,9 @@
 					"equites": "60375",
 					"debts": "1160487",
 					"dues": "",
-					"acc_value": "",
+					"acc_value": "5.20",
 					"dividend": "0.25",
-					"cost_of_board": "",
+					"cost_of_board": "25000",
 					"events": [
 						"w listopadzie miał miejsce pożar na Wydziale Lakierni KTL w Wieluniu, mienie jest objęte ubezpieczniem, jednak straty z tego tytułu wycenione sa na 40 mln zł",
 						"budowa centrum badawczego ze środków NCBiR "
@@ -1277,8 +1277,11 @@
 					"oblig": "",
 					"acc_value": "22.17",
 					"dividend": 3.54,
-					"cost_of_board": "",
-					"events": [],
+					"cost_of_board": "23000",
+					"events": [
+						"Wprowadzenie do obrotu giełdowego na Głównym Rynku Giełdy Papierów Wartościowych w Warszawie S.A. praw do akcji zwykłych na okaziciela serii E",
+						"kupno akcji przez osoby powiązane"
+					],
 					"board": [
 						"Zbigniew Juroszek",
 						"Mateusz Juroszek",
@@ -1352,8 +1355,11 @@
 					"oblig": "",
 					"acc_value": "20.53",
 					"dividend": 1.68,
-					"cost_of_board": "",
-					"events": [],
+					"cost_of_board": "12000",
+					"events": [
+						"kupno akcji przez członka zarządu",
+						"Wyznaczenie ostatniego dnia notowania praw do akcji zwykłych na okaziciela serii E oraz wprowadzenie do obrotu giełdowego na Głównym Rynku Giełdy Papierów Wartościowych w Warszawie S.A. akcji zwykłych na okaziciela serii B, C, D i E"
+					],
 					"board": [
 						"Zbigniew Juroszek",
 						"Mateusz Juroszek",
@@ -1427,8 +1433,11 @@
 					"oblig": "",
 					"acc_value": "17.78",
 					"dividend": 0.61,
-					"cost_of_board": "",
-					"events": [],
+					"cost_of_board": "29000",
+					"events": [
+						"emisja obligacji serii I i J",
+						"kupno akcji przez wiceprezesa zarządu"
+					],
 					"board": [
 						"Zbigniew Juroszek",
 						"Mateusz Juroszek",
@@ -1502,8 +1511,12 @@
 					"oblig": "",
 					"acc_value": "16.09",
 					"dividend": 0,
-					"cost_of_board": "",
-					"events": [],
+					"cost_of_board": "12000",
+					"events": [
+						"nabycie akcji przez Altus TFI SA",
+						"informacja o zamiarze połączenia z ATAL-WYKONAWSTWO Sp. z o.o. i ATAL-WYKONAWSTWO S.K.A.",
+						"Zawiadomienia w trybie art. 19 ust. 3 rozporządzenia MAR o nabyciu akcji spółki ATAL S.A. przez osobę pełniącą obowiązku zarządcze"
+					],
 					"board": [
 						"Zbigniew Juroszek",
 						"Mateusz Juroszek",
@@ -1574,7 +1587,7 @@
 			"ticker": "TEN",
 			"date_IPO": "11-05-2018",
 			"price_IPO": "62.00",
-			"about" : "Grupa jest polskim producentem i wydawcą gier udostępnianych w modelu F2P (free to play) przeznaczonych na urządzenia mobilne (smartfony, tablety) oraz przeglądarki. Spółka konkuruje na rynku globalnym, a jej gry są udostępniane w większości krajów na świecie. Gry na urządzenia mobilne dystrybuowane są głównie za pośrednictwem platform Google Play oraz App Store. Gry przeglądarkowe (uruchamiane z poziomu przeglądarki internetowej) są natomiast dystrybuowane przez własną stronę internetową lub za pośrednictwem zewnętrznych portali. Od 2015 roku gry projektowane są niemal wyłącznie z myślą o dystrybucji na urządzenia mobilne.",
+			"about": "Grupa jest polskim producentem i wydawcą gier udostępnianych w modelu F2P (free to play) przeznaczonych na urządzenia mobilne (smartfony, tablety) oraz przeglądarki. Spółka konkuruje na rynku globalnym, a jej gry są udostępniane w większości krajów na świecie. Gry na urządzenia mobilne dystrybuowane są głównie za pośrednictwem platform Google Play oraz App Store. Gry przeglądarkowe (uruchamiane z poziomu przeglądarki internetowej) są natomiast dystrybuowane przez własną stronę internetową lub za pośrednictwem zewnętrznych portali. Od 2015 roku gry projektowane są niemal wyłącznie z myślą o dystrybucji na urządzenia mobilne.",
 			"years": [
 				{
 					"year": 2019,
@@ -1672,12 +1685,12 @@
 					"net_profit": "36468",
 					"operative_profit": "44315",
 					"equites": "7275",
-					"debts": "",
+					"debts": "34000",
 					"dues": "",
 					"oblig": "",
 					"acc_value": "5.785",
 					"dividend": 0,
-					"cost_of_board": "",
+					"cost_of_board": "45000",
 					"events": [
 						"Ten Square Games, producent i wydawca gier mobilnych oraz przeglądarkowych, zadebiutuje na GPW w piątek, 11 maja - poinformowała spółka w komunikacie.",
 						"Kurs akcji Ten Square Games wzrósł w debiucie o 13,5 proc",
