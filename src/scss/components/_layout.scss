@@ -1,0 +1,217 @@
+body {
+   font-family: 'nunitoregular',Arial, Helvetica, sans-serif;
+   background-color: $bcg_color;
+   overflow:auto;
+   font-size: $font;
+   
+}
+ 
+.entryImg {
+   background-image:url('../images/land.jpg');
+   background-repeat:no-repeat;
+   height:100vh;
+   width:100vw;
+   background-position: center; 
+   background-size: cover;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+ 
+ .stick-header{
+   background-color: $hd_color;
+   height: 5rem;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 4px 4px 5px lightgray;
+ }
+ header {
+   color: $font_white;
+   margin: 0 auto;
+   width: $large;
+   height:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 2px;
+   h1 {
+      width: 50%;
+      text-align: center;
+   }
+   .selector {
+      width: 50%;
+      text-align:left;
+   }
+    h2, h3 {
+      display: none;
+   }
+    .inHeader {
+      width: 40%;
+      color: $color_grey;
+      padding-right: 1rem;
+   }
+ }
+ 
+ 
+ footer {
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   height: 5rem;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   background: rgb(255,255,255);
+   background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(246,246,246) 47%, rgb(237,237,237) 100%);
+   background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
+   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+   background-color: #9BB5FF;
+ 
+   .stick-footer {
+      width: $large;
+      margin: 0 auto;
+      height: 100%;
+   }
+ }
+ 
+.element {
+   background-color: $el_color;
+   height: 2rem;
+   height: $min_height;
+   box-shadow: 2px 2px 3px lightgrey;
+   border-radius: 4px;
+   padding: $el_padding;
+   -webkit-transition: all 500ms ease;
+   -moz-transition: all 500ms ease;
+   -ms-transition: all 500ms ease;
+   -o-transition: all 500ms ease;
+   transition: all 500ms ease;
+   &:hover {
+      background-color: #F9F9F9;
+      box-shadow: 4px 4px 5px lightgrey;
+   }
+   h2 {
+      padding: 0.5rem;
+    }
+}
+ 
+section {
+   height: 15rem;
+   padding: $el_padding;
+}
+ 
+ .right-sidebar {
+   background-color: #58c2e9;
+   height: 15rem;
+}
+ 
+.centerDiv {
+  width: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+  h1, h2, h3 {
+     color: white;
+     font-family: 'nunitolight', Arial, Helvetica, sans-serif;
+     padding: 0.5rem;
+     line-height: 1.5rem;
+     width: 100%;   
+  }
+  h2 {
+     width: 150%;
+     margin-top:1rem;
+  }
+   .selector {
+      width:100%;
+      z-index: 4;
+   }
+   .blackBack {
+      background-color: black;
+      opacity: 0.4;
+      z-index: -3;
+      position: absolute;
+      width: 50rem;
+      height: 15rem;
+      top: -2rem;
+      left: -2rem;
+   }
+}
+
+div.info {
+      overflow: auto;
+      height: 10rem;
+      line-height: 1.5rem;
+      &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+        border-radius: 2px;
+      }
+      &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5;
+      }  
+      &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: darkgray;
+      opacity: 0.5;
+      }
+}
+ 
+ 
+.navigation {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row-reverse;
+   margin: 0 auto;
+   height: 100%;
+   border-radius: 2px;
+}
+ 
+button.circle {
+   -webkit-transition: all 200ms ease;
+   -moz-transition: all 200ms ease;
+   -ms-transition: all 200ms ease;
+   -o-transition: all 200ms ease;
+   transition: all 200ms ease;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   align-content: center;
+   border-radius: 50%;
+   width: 4em;
+   height: 4em;
+   margin: 1rem;
+   box-shadow:  2px 2px 2px 2px  whitesmoke;
+   background-color: #EFEFEF;
+   &:active {
+      color: white;
+   }
+   &:focus {
+      background-color: $bcg_color;
+      outline: 0;
+   }
+   &:visited {
+      background-color:$hd_color;
+   }
+   &:link {
+     background-color:$hd_color;
+   }
+   &:hover {
+      box-shadow: 1px 1px 1px 1px lightgray;
+      border: 1px solid white;
+   }
+}
+
+div button.currYear {
+   width: 8rem;
+   border-radius: 30%;
+}
