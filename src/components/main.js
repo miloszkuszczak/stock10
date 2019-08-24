@@ -14,13 +14,15 @@ import { ProfitGraph } from "./profitgraph.js";
 
 const currYear = new Date().getFullYear();
 
+
+
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
             stockCompany: this.props.stock,
             stockData: this.props.stockData[0],
-            selectedYear: this.GetYearsToShow(this.props.stockData[0].years)[0],
+            selectedYear: this.getYearToShow(this.props.stockData[0].years)[0],
             yearsToShow: [],
         }
     }
@@ -32,18 +34,19 @@ class Main extends Component {
 
     componentWillReceiveProps(newProps) {
         this.setState({
-            selectedYear: this.GetYearsToShow(newProps.stockData[0].years)[0],
+            selectedYear: this.getYearToShow(newProps.stockData[0].years)[0],
         })
     }
 
-    GetYearsToShow(years) {
-        const yearsToShow = years.map(item => { return item.year }).sort((a, b) => { a > b });
-        return yearsToShow;
+    getYearToShow(year) {
+      const show = year.map(item => { return item.year });
+      return show.sort((a, b) => {return  a > b })
     }
+
 
     componentDidMount() {
         this.setElementsAnimation();
-        let yearsToShow = this.GetYearsToShow(this.state.stockData.years);
+        let yearsToShow = this.getYearToShow(this.state.stockData.years);
         let selectedYear = yearsToShow[0];
         this.setState({ yearsToShow, selectedYear });
     }
@@ -84,13 +87,15 @@ class Main extends Component {
 
 
     render() {
-        const yearsToShow = this.GetYearsToShow(this.props.stockData[0].years);
+        const yearsToShow = this.getYearToShow(this.props.stockData[0].years);
         const actualYear = this.state.selectedYear;
         const actualYearData = this.props.stockData[0].years.filter((elem) => { return elem.year == actualYear });
         const allDataFromStartToToday = this.props.stockData[0].years.filter((elem) => { return elem.year <= actualYear });
         const dataForProfitGraph = this.props.stockData[0].years.filter((elem) => { return elem.year < actualYear });
+        debugger;
         const previousYearData = this.props.stockData[0].years.filter(elem => { return elem.year == (actualYear - 1) });
-        const dividendsFromIPO = allDataFromStartToToday.map(item => parseFloat(item.dividend)).reduce((a, b) => (a + b));
+        const allDividends = allDataFromStartToToday.map(item => {return parseFloat(item.dividend)});
+        const dividendsFromIPO = allDividends.reduce((a, b) => {return a + b});
         const shares = actualYearData[0].shareholders.map(x => [x.share]);
         const holders = actualYearData[0].shareholders.map(x => [x.holder]);
         const info = actualYearData[0].events.map(x => [x]);
