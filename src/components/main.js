@@ -78,7 +78,7 @@ class Main extends Component {
     }
 
     handleClick(e) {
-        debugger;
+ 
         this.setState({
             selectedYear: e.target.value,
         })
@@ -92,7 +92,6 @@ class Main extends Component {
         const actualYearData = this.props.stockData[0].years.filter((elem) => { return elem.year == actualYear });
         const allDataFromStartToToday = this.props.stockData[0].years.filter((elem) => { return elem.year <= actualYear });
         const dataForProfitGraph = this.props.stockData[0].years.filter((elem) => { return elem.year < actualYear });
-        debugger;
         const previousYearData = this.props.stockData[0].years.filter(elem => { return elem.year == (actualYear - 1) });
         const allDividends = allDataFromStartToToday.map(item => {return parseFloat(item.dividend)});
         const dividendsFromIPO = allDividends.reduce((a, b) => {return a + b});
@@ -150,7 +149,7 @@ class Main extends Component {
                 </div>
                 <footer>
                     <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div>
-                      <div className="contact"><span>Autor: Miłosz Kuszczak</span>
+                      <div className="contact"><span>Autor: </span>
                            <a target="_blank" rel="noopener noreferrer" className="social" href="https://www.linkedin.com/in/milosz-kuszczak"><img src="https://img.icons8.com/android/24/000000/linkedin.png"/></a>
                            <a target="_blank" rel="noopener noreferrer" className="social" href="https://github.com/miloszkuszczak"><img src="https://img.icons8.com/material/24/000000/github.png"/></a>
                       </div>
@@ -196,7 +195,7 @@ class Main extends Component {
                 </div>
                 <footer>
                     <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div>
-                    <div className="contact"><span>Autor: Miłosz Kuszczak</span>
+                    <div className="contact"><span>Autor: </span>
                          <a target="_blank" rel="noopener noreferrer" className="social" href="https://www.linkedin.com/in/milosz-kuszczak"><img src="https://img.icons8.com/android/24/000000/linkedin.png"/></a>
                          <a target="_blank" rel="noopener noreferrer" className="social" href="https://github.com/miloszkuszczak"><img src="https://img.icons8.com/material/24/000000/github.png"/></a>
                     </div>
