@@ -7,9 +7,11 @@ export const randomCite = function () {
     const cite = [
         { author: "Warren Buffet", cites: ["Na giełdzie kapitał płynie od aktywnych do cierpliwych", "Wall Street to miejsce, gdzie ludzie przyjeżdżający limuzynami proszą o rady tych przyjeżdżających metrem",] },
         { author: "dr Alexander Elder", cites: ["Rynek potrafi być dłużej irracjonalny niż inwestor wypłacalny", "Trend is your friend"] },
-        { author: "George Soros", cites: ["Bitcoin jest super", "Lubię oszukiwać ludzi na spekulacji"] },
-        { author: "Albert Rokicki", cites: ['Pierwszy dzień tygodnia wskazuje fałszywy kierunek tygodnia', 'Z inwestorskim pozdrowieniem'] },
-        { author: "Miłosz Kuszczak", cites: ['Problemem większości inwestorów jest fakt iż używają określenia "grać na giełdzie" zamiast na niej "inwestować"'] }];
+        { author: "George Soros", cites: ["Zwiększ stawkę gdy jesteś pewny siebie i skaluj w dół swoje pozycje, gdy brakuje Ci przekonania."] },
+        { author: `Albert "Longterm" Rokicki`, cites: ['Z inwestorskim pozdrowieniem...'] },
+        { author: "Miłosz Kuszczak", cites: ['Problemem większości inwestorów jest fakt iż chcą "grać an giełdzie" zamiast na niej inwestować'] },
+        {author: "Benjamin Franklin", cites: ['Inwestycja w wiedzę wypłaca najlepsze odsetki']},
+        {author: "Benjamin Graham", cites: ['W krótkim okresie, rynek jest jak jednoręki bandyta, ale w dłuższej perspektywie działa jak waga.']}];
 
     const citesArray = cite.map(element => [element.author, element.cites]);
     const authorNo = getRandomIntInclusive(0, citesArray.length - 1);
@@ -44,4 +46,3 @@ export const capitalFirst = function (paragraph) {
     let firstWord = paragraph[0].split(' ')[0];
     return firstWord.charAt(0).toUpperCase() + paragraph[0].slice(1);
 }
-

@@ -149,7 +149,12 @@ class Main extends Component {
                     </div>
                 </div>
                 <footer>
-                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div></div>
+                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div>
+                      <div className="contact"><span>Autor: Miłosz Kuszczak</span>
+                           <a target="_blank" rel="noopener noreferrer" className="social" href="https://www.linkedin.com/in/milosz-kuszczak"><img src="https://img.icons8.com/android/24/000000/linkedin.png"/></a>
+                           <a target="_blank" rel="noopener noreferrer" className="social" href="https://github.com/miloszkuszczak"><img src="https://img.icons8.com/material/24/000000/github.png"/></a>
+                      </div>
+                    </div>
                 </footer>
             </>
             )
@@ -190,7 +195,12 @@ class Main extends Component {
                     </div>
                 </div>
                 <footer>
-                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div></div>
+                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div>
+                    <div className="contact"><span>Autor: Miłosz Kuszczak</span>
+                         <a target="_blank" rel="noopener noreferrer" className="social" href="https://www.linkedin.com/in/milosz-kuszczak"><img src="https://img.icons8.com/android/24/000000/linkedin.png"/></a>
+                         <a target="_blank" rel="noopener noreferrer" className="social" href="https://github.com/miloszkuszczak"><img src="https://img.icons8.com/material/24/000000/github.png"/></a>
+                    </div>
+                    </div>
                 </footer>
             </>)
         }

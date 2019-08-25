@@ -3,21 +3,21 @@ body {
    background-color: $bcg_color;
    overflow:auto;
    font-size: $font;
-   
+
 }
- 
+
 .entryImg {
    background-image:url('../images/land.jpg');
    background-repeat:no-repeat;
    height:100vh;
    width:100vw;
-   background-position: center; 
+   background-position: center;
    background-size: cover;
    display:flex;
    align-items: center;
    justify-content: center;
 }
- 
+
  .stick-header{
    background-color: $hd_color;
    height: 5rem;
@@ -55,13 +55,13 @@ body {
       padding-right: 1rem;
    }
  }
- 
- 
+
+
  footer {
    width: 100%;
    position: fixed;
    bottom: 0;
-   height: 5rem;
+   height: 8rem;
    display:flex;
    align-items: center;
    justify-content: center;
@@ -70,15 +70,47 @@ body {
    background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
-   background-color: #9BB5FF;
- 
+   box-shadow: 0px -8px 8px -8px whitesmoke;
+    a.social {
+      margin: 0.5rem;
+      &:link {
+        color: #0000A0;
+        background-color: #FFFFFF;
+        text-decoration: none;
+        target-new: tab;
+    }
+    &:hover {
+      box-shadow: 2px 2px 2px lightgrey;
+    }
+  }
+
+
    .stick-footer {
       width: $large;
       margin: 0 auto;
       height: 100%;
+      .navigation {
+         display:flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: row-reverse;
+         margin: 0 auto;
+         border-radius: 2px;
+      }
+      .contact {
+        height: 1.5rem;
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        span {
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
+      }
+    }
    }
- }
- 
+
+
 .element {
    background-color: $el_color;
    height: 2rem;
@@ -99,17 +131,17 @@ body {
       padding: 0.5rem;
     }
 }
- 
+
 section {
    height: 15rem;
    padding: $el_padding;
 }
- 
+
  .right-sidebar {
    background-color: #58c2e9;
    height: 15rem;
 }
- 
+
 .centerDiv {
   width: 400px;
   border-radius: 5px;
@@ -122,7 +154,7 @@ section {
      font-family: 'nunitolight', Arial, Helvetica, sans-serif;
      padding: 0.5rem;
      line-height: 1.5rem;
-     width: 100%;   
+     width: 100%;
   }
   h2 {
      width: 150%;
@@ -156,25 +188,17 @@ div.info {
       &::-webkit-scrollbar {
       width: 6px;
       background-color: #F5F5F5;
-      }  
+      }
       &::-webkit-scrollbar-thumb {
       border-radius: 2px;
       background-color: darkgray;
       opacity: 0.5;
       }
 }
- 
- 
-.navigation {
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row-reverse;
-   margin: 0 auto;
-   height: 100%;
-   border-radius: 2px;
-}
- 
+
+
+
+
 button.circle {
    -webkit-transition: all 200ms ease;
    -moz-transition: all 200ms ease;
